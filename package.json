@@ -1,0 +1,30 @@
+{
+  "name": "base-ts",
+  "version": "0.0.1",
+  "description": "The starting point for any Typescript Project",
+  "main": "index.js",
+  "scripts": {
+    "format": "eslint src --fix",
+    "lint": "eslint src",
+    "tsc": "tsc --noEmit",
+    "dev": "webpack --watch & nodemon dist/server/main.js",
+    "build": "webpack",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "express": "^4.18.2",
+    "husky": "^8.0.3",
+    "nodemon": "^3.0.1",
+    "ts-loader": "^9.4.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
